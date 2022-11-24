@@ -5,7 +5,8 @@ import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
-
+import Team from './scenes/team';
+import Contacts from './scenes/contacts';
 
 function App() {
 
@@ -23,9 +24,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
 
-              {/* <Route path="/team" element={<Team />} /> */}
+              <Route path="/team" element={<Team />} />
 
-              {/* <Route path="/contacts" element={<Contacts />} /> */}
+              <Route path="/contacts" element={<Contacts />} />
 
               {/* <Route path="/invoices" element={<Invoices />} /> */}
 
